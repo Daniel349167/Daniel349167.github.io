@@ -8,6 +8,8 @@
       content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack especializado en productos web, APIs, integraciones y sistemas Java."
     />
     <meta name="theme-color" content="#11130f" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://daniel349167.github.io/" />
     <meta property="og:title" content="Daniel Ureta Espinal | Full Stack Developer" />
     <meta
       property="og:description"
@@ -15,7 +17,11 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://daniel349167.github.io/" />
+    <meta property="og:image" content="https://daniel349167.github.io/assets/portfolio-preview.png" />
+    <meta property="og:image:alt" content="Portafolio de Daniel Ureta, Full Stack Developer" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Daniel Ureta Espinal | Full Stack Developer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,6 +55,7 @@
           <a href="#caso">Caso principal</a>
           <a href="#trabajo">Trabajo</a>
           <a href="#experiencia">Experiencia</a>
+          <a href="assets/Daniel-Ureta-CV-Full-Stack.pdf">CV</a>
         </div>
         <a class="nav-cta" href="mailto:duretae@gmail.com">Hablemos ↗</a>
       </nav>
@@ -67,6 +74,7 @@
             <div class="hero-actions">
               <a class="button button-accent" href="#caso">Ver caso principal ↓</a>
               <a class="button button-ghost" href="https://github.com/Daniel349167" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a class="button button-ghost" href="assets/Daniel-Ureta-CV-Full-Stack.pdf" download>Descargar CV ↓</a>
             </div>
           </div>
 
@@ -157,21 +165,19 @@
                 <li><span>✓</span> Retries exponenciales, dead-letter y audit trail</li>
                 <li><span>✓</span> CI separada para backend, frontend y E2E</li>
               </ul>
+              <div class="verification-row" aria-label="Verificaciones del proyecto">
+                <span><i aria-hidden="true"></i> CI verificado</span>
+                <span>Docker E2E</span>
+                <span>Testcontainers</span>
+              </div>
               <a class="button button-dark" href="https://github.com/Daniel349167/fiscalflow-integration-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
             </div>
 
-            <div class="dashboard-preview" aria-label="Vista conceptual del dashboard FiscalFlow">
-              <div class="preview-head"><span>FISCALFLOW / OPERACIÓN</span><i>API CONECTADA</i></div>
-              <h4>Control de integraciones</h4>
-              <div class="preview-metrics"><p><span>Total</span><b>04</b></p><p><span>Aceptación</span><b>75%</b></p><p><span>Retries</span><b>00</b></p></div>
-              <div class="preview-table">
-                <p class="table-head"><span>REFERENCIA</span><span>PROVEEDOR</span><span>ESTADO</span></p>
-                <p class="selected"><strong>INV-2026-004</strong><span>Demo Fast</span><em>ACEPTADO</em></p>
-                <p><strong>RETRY-2026-003</strong><span>Demo Fast</span><em>ACEPTADO</em></p>
-                <p><strong>INV-2026-002</strong><span>Demo Strict</span><em class="rejected">RECHAZADO</em></p>
-              </div>
-              <div class="preview-flow"><span>API</span><b>→</b><span>DB</span><b>→</b><span>OUTBOX</span><b>→</b><span>ADAPTER</span></div>
-            </div>
+            <figure class="product-shot">
+              <div class="product-shot-bar"><span>FiscalFlow / Docker local</span><strong><i aria-hidden="true"></i> API conectada</strong></div>
+              <img src="assets/fiscalflow-dashboard.png" alt="Dashboard operativo de FiscalFlow con métricas, comprobantes y auditoría" width="1265" height="712" loading="lazy" />
+              <figcaption>Aplicación real ejecutándose con Vue, Spring Boot y PostgreSQL.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -190,34 +196,37 @@
             <article class="work-item">
               <p class="work-number">02</p>
               <div>
-                <p class="work-label">EVENT-DRIVEN / JAVA</p>
+                <p class="work-label">EVENT-DRIVEN / JAVA <span class="verified">● CI PASS</span></p>
                 <h3>LedgerGuard</h3>
                 <p>Autorización de transacciones y evaluación antifraude explicable mediante microservicios, Kafka y outbox transaccional.</p>
               </div>
               <ul><li>Quarkus</li><li>Kafka / Redpanda</li><li>OpenTelemetry</li><li>Kubernetes</li></ul>
-              <a href="https://github.com/Daniel349167/ledgerguard-platform" target="_blank" rel="noreferrer" aria-label="Ver LedgerGuard en GitHub">↗</a>
+              <div class="work-actions"><a href="https://github.com/Daniel349167/ledgerguard-platform" target="_blank" rel="noreferrer" aria-label="Ver código de LedgerGuard">Código ↗</a></div>
             </article>
 
             <article class="work-item">
               <p class="work-number">03</p>
               <div>
-                <p class="work-label">MULTI-TENANT / SECURITY</p>
+                <p class="work-label">MULTI-TENANT / SECURITY <span class="verified">● CI PASS</span></p>
                 <h3>TenantFlow</h3>
                 <p>API SaaS multi-tenant con aislamiento por JWT, arquitectura hexagonal, RBAC y concurrencia optimista.</p>
               </div>
               <ul><li>Spring Boot</li><li>Keycloak / OIDC</li><li>PostgreSQL</li><li>Testcontainers</li></ul>
-              <a href="https://github.com/Daniel349167/tenantflow-saas-api" target="_blank" rel="noreferrer" aria-label="Ver TenantFlow en GitHub">↗</a>
+              <div class="work-actions"><a href="https://github.com/Daniel349167/tenantflow-saas-api" target="_blank" rel="noreferrer" aria-label="Ver código de TenantFlow">Código ↗</a></div>
             </article>
 
             <article class="work-item">
               <p class="work-number">04</p>
               <div>
-                <p class="work-label">OPTIMIZATION / PRODUCT UI</p>
+                <p class="work-label">OPTIMIZATION / PRODUCT UI <span class="verified">● LIVE</span></p>
                 <h3>Supervisor Scheduling</h3>
                 <p>Motor de cronogramas con restricciones, edición interactiva y exportación para operaciones de supervisión.</p>
               </div>
               <ul><li>React</li><li>TypeScript</li><li>Scheduling</li><li>GitHub Pages</li></ul>
-              <a href="https://github.com/Daniel349167/supervisor-scheduling-engine" target="_blank" rel="noreferrer" aria-label="Ver Supervisor Scheduling en GitHub">↗</a>
+              <div class="work-actions">
+                <a href="https://daniel349167.github.io/supervisor-scheduling-engine/" target="_blank" rel="noreferrer" aria-label="Abrir demo de Supervisor Scheduling">Demo ↗</a>
+                <a href="https://github.com/Daniel349167/supervisor-scheduling-engine" target="_blank" rel="noreferrer" aria-label="Ver código de Supervisor Scheduling">Código ↗</a>
+              </div>
             </article>
           </div>
         </div>
@@ -261,6 +270,7 @@
           <h2>¿Construimos algo que tenga que funcionar de verdad?</h2>
           <div>
             <a class="button button-accent" href="mailto:duretae@gmail.com">duretae@gmail.com ↗</a>
+            <a class="contact-link" href="assets/Daniel-Ureta-CV-Full-Stack.pdf" download>Descargar CV en PDF ↓</a>
             <a class="contact-link" href="https://github.com/Daniel349167" target="_blank" rel="noreferrer">github.com/Daniel349167 ↗</a>
           </div>
         </div>

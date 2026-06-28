@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
 }
 
 body {
@@ -54,11 +55,13 @@ a {
 }
 
 .site-header {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 50;
   inset: 0 0 auto;
   color: var(--paper-bright);
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(17, 19, 15, 0.92);
+  backdrop-filter: blur(14px);
 }
 
 .nav {
@@ -530,112 +533,77 @@ h1 em {
   color: var(--success);
 }
 
-.dashboard-preview {
-  position: relative;
-  padding: 30px;
-  border: 1px solid var(--ink);
-  background: #e7eaec;
-  box-shadow: 18px 18px 0 var(--accent);
-}
-
-.preview-head {
+.verification-row {
   display: flex;
-  justify-content: space-between;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 9px;
+  margin: -10px 0 28px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.preview-head i {
-  color: var(--success);
-  font-style: normal;
-}
-
-.dashboard-preview h4 {
-  margin: 30px 0 22px;
-  font-size: 33px;
-  letter-spacing: -0.05em;
-}
-
-.preview-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid #c6cacb;
-  background: var(--paper-bright);
-}
-
-.preview-metrics p {
-  display: flex;
-  margin: 0;
-  padding: 16px;
-  flex-direction: column;
-  border-left: 1px solid #d5d8d7;
-}
-
-.preview-metrics p:first-child {
-  border-left: 0;
-}
-
-.preview-metrics span {
+.verification-row span {
+  padding: 7px 9px;
+  border: 1px solid var(--line);
   color: var(--muted);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 8px;
+  font-size: 9px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
-.preview-metrics b {
-  font-size: 25px;
+.verification-row i,
+.product-shot-bar i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: var(--success);
 }
 
-.preview-table {
-  margin-top: 16px;
-  border: 1px solid #c6cacb;
-  background: var(--paper-bright);
-}
-
-.preview-table p {
-  display: grid;
+.product-shot {
+  position: relative;
   margin: 0;
-  padding: 13px 15px;
-  grid-template-columns: 1.2fr 0.8fr 0.7fr;
-  gap: 10px;
-  border-bottom: 1px solid #d8dbda;
-  font-size: 11px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  box-shadow: 18px 18px 0 var(--accent);
+  overflow: hidden;
 }
 
-.preview-table .table-head {
-  color: var(--muted);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 7px;
-}
-
-.preview-table .selected {
-  background: rgba(216, 255, 72, 0.2);
-}
-
-.preview-table em {
-  color: var(--success);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 8px;
-  font-style: normal;
-}
-
-.preview-table em.rejected {
-  color: var(--danger);
-}
-
-.preview-flow {
+.product-shot-bar {
   display: flex;
-  margin-top: 17px;
-  justify-content: space-between;
+  min-height: 44px;
+  padding: 0 16px;
   align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.62);
   font-family: "IBM Plex Mono", monospace;
   font-size: 9px;
+  text-transform: uppercase;
 }
 
-.preview-flow span {
-  padding: 7px 9px;
-  border: 1px solid #aeb1b0;
-  background: var(--paper-bright);
+.product-shot-bar strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.product-shot-bar i {
+  background: var(--accent);
+}
+
+.product-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.product-shot figcaption {
+  margin: 0;
+  padding: 12px 16px;
+  color: rgba(255, 255, 255, 0.55);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9px;
 }
 
 .selected-work,
@@ -657,7 +625,7 @@ h1 em {
   display: grid;
   min-height: 270px;
   padding-block: 38px;
-  grid-template-columns: 90px 1.4fr 0.8fr 64px;
+  grid-template-columns: 90px 1.35fr 0.65fr 180px;
   gap: 26px;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.22);
@@ -682,8 +650,22 @@ h1 em {
 }
 
 .work-label {
+  display: flex;
   margin-bottom: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   color: var(--accent);
+}
+
+.verified {
+  display: inline-block;
+  margin: 0;
+  padding: 3px 6px;
+  color: var(--accent);
+  border: 1px solid rgba(216, 255, 72, 0.35);
+  font-size: 8px;
+  letter-spacing: 0.05em;
 }
 
 .work-item ul {
@@ -700,20 +682,30 @@ h1 em {
   text-transform: uppercase;
 }
 
-.work-item > a {
-  display: grid;
-  width: 52px;
-  height: 52px;
-  place-items: center;
+.work-actions {
+  display: flex;
   justify-self: end;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: var(--accent);
-  font-size: 24px;
-  text-decoration: none;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.work-item > a:hover,
-.work-item > a:focus-visible {
+.work-actions a {
+  display: inline-flex;
+  min-width: 112px;
+  min-height: 42px;
+  padding: 0 12px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.work-actions a:hover,
+.work-actions a:focus-visible {
   color: var(--ink);
   background: var(--accent);
 }
@@ -916,7 +908,7 @@ footer {
   }
 
   .work-item {
-    grid-template-columns: 60px 1fr 52px;
+    grid-template-columns: 60px 1fr 130px;
   }
 
   .work-item ul {
@@ -933,6 +925,10 @@ footer {
 }
 
 @media (max-width: 700px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
   .shell {
     width: min(calc(100% - 28px), var(--max-width));
   }
@@ -1041,26 +1037,8 @@ footer {
     gap: 50px;
   }
 
-  .dashboard-preview {
-    padding: 18px;
+  .product-shot {
     box-shadow: 8px 8px 0 var(--accent);
-  }
-
-  .preview-table p {
-    grid-template-columns: 1fr 0.65fr;
-  }
-
-  .preview-table p > span {
-    display: none;
-  }
-
-  .preview-flow {
-    gap: 5px;
-  }
-
-  .preview-flow span {
-    padding: 5px;
-    font-size: 7px;
   }
 
   .work-list {
@@ -1077,9 +1055,11 @@ footer {
     font-size: 34px;
   }
 
-  .work-item > a {
+  .work-actions {
     grid-column: 2;
     justify-self: start;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .timeline article {
