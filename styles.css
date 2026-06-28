@@ -1,13 +1,15 @@
 :root {
-  --ink: #11130f;
-  --ink-soft: #22251e;
-  --paper: #f0f0e8;
-  --paper-bright: #fafaf4;
-  --accent: #d8ff48;
-  --muted: #686b62;
-  --line: #babcb2;
-  --danger: #b43a32;
-  --success: #19724b;
+  --ink: #182126;
+  --ink-soft: #29363d;
+  --paper: #f3f2ef;
+  --paper-bright: #fbfaf7;
+  --accent: #9cb3c2;
+  --accent-soft: #dce6ec;
+  --accent-deep: #476778;
+  --muted: #65747c;
+  --line: #ccd0d1;
+  --danger: #a4544e;
+  --success: #3f7463;
   --max-width: 1240px;
 }
 
@@ -137,9 +139,9 @@ a {
   bottom: -260px;
   width: 630px;
   height: 630px;
-  border: 1px solid rgba(216, 255, 72, 0.28);
+  border: 1px solid rgba(156, 179, 194, 0.2);
   border-radius: 50%;
-  box-shadow: 0 0 0 90px rgba(216, 255, 72, 0.035), 0 0 0 180px rgba(216, 255, 72, 0.02);
+  box-shadow: 0 0 0 90px rgba(156, 179, 194, 0.025), 0 0 0 180px rgba(156, 179, 194, 0.012);
   content: "";
 }
 
@@ -258,7 +260,7 @@ h1 em {
 .hero-console {
   border: 1px solid rgba(255, 255, 255, 0.22);
   background: rgba(17, 19, 15, 0.82);
-  box-shadow: 16px 16px 0 rgba(216, 255, 72, 0.14);
+  box-shadow: 12px 12px 0 rgba(156, 179, 194, 0.11);
   backdrop-filter: blur(8px);
 }
 
@@ -331,12 +333,12 @@ h1 em {
   margin-right: 8px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 5px rgba(216, 255, 72, 0.1);
+  box-shadow: 0 0 0 5px rgba(156, 179, 194, 0.08);
 }
 
 .evidence-bar {
   border-bottom: 1px solid var(--ink);
-  background: var(--accent);
+  background: var(--accent-soft);
 }
 
 .evidence-grid {
@@ -565,7 +567,7 @@ h1 em {
   margin: 0;
   border: 1px solid var(--ink);
   background: var(--ink);
-  box-shadow: 18px 18px 0 var(--accent);
+  box-shadow: 12px 12px 0 var(--accent-soft);
   overflow: hidden;
 }
 
@@ -663,7 +665,7 @@ h1 em {
   margin: 0;
   padding: 3px 6px;
   color: var(--accent);
-  border: 1px solid rgba(216, 255, 72, 0.35);
+  border: 1px solid rgba(156, 179, 194, 0.3);
   font-size: 8px;
   letter-spacing: 0.05em;
 }
@@ -797,7 +799,7 @@ h1 em {
 .contact {
   padding-block: 100px;
   border-bottom: 1px solid var(--ink);
-  background: var(--accent);
+  background: var(--accent-soft);
 }
 
 .contact-grid {
@@ -965,7 +967,7 @@ footer {
   }
 
   .hero-console {
-    box-shadow: 8px 8px 0 rgba(216, 255, 72, 0.14);
+    box-shadow: 6px 6px 0 rgba(156, 179, 194, 0.1);
   }
 
   .console-body p {
@@ -1038,7 +1040,7 @@ footer {
   }
 
   .product-shot {
-    box-shadow: 8px 8px 0 var(--accent);
+    box-shadow: 6px 6px 0 var(--accent-soft);
   }
 
   .work-list {
