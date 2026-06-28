@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack especializado en productos web, APIs, integraciones, Java, Vue y Laravel."
+      content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack especializado en productos web, APIs, integraciones y sistemas Java."
     />
-    <meta name="theme-color" content="#07182e" />
+    <meta name="theme-color" content="#11130f" />
     <meta property="og:title" content="Daniel Ureta Espinal | Full Stack Developer" />
     <meta
       property="og:description"
-      content="Productos web, APIs e integraciones con Vue, Laravel, Java, Quarkus y Spring Boot."
+      content="Casos de ingeniería Full Stack: interfaces, APIs, datos, integraciones y entrega reproducible."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://daniel349167.github.io/" />
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -41,210 +41,236 @@
 
     <header class="site-header">
       <nav class="nav shell" aria-label="Navegación principal">
-        <a class="brand" href="#inicio" aria-label="Daniel Ureta - Inicio">
+        <a class="brand" href="#inicio" aria-label="Daniel Ureta — inicio">
           <span class="brand-mark" aria-hidden="true">DU</span>
           <span>Daniel Ureta</span>
         </a>
         <div class="nav-links">
+          <a href="#caso">Caso principal</a>
+          <a href="#trabajo">Trabajo</a>
           <a href="#experiencia">Experiencia</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
         </div>
+        <a class="nav-cta" href="mailto:duretae@gmail.com">Hablemos ↗</a>
       </nav>
     </header>
 
     <main id="contenido">
-      <section class="hero shell" id="inicio">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> Lima, Perú · Disponible para remoto e híbrido</p>
-          <h1>Productos web, móviles y APIs que llegan a producción.</h1>
-          <p class="hero-lead">
-            Soy Daniel, desarrollador Full Stack con más de 5 años construyendo y manteniendo
-            aplicaciones web, móviles y APIs. Trabajo desde la interfaz y la lógica de negocio hasta
-            los datos, integraciones y despliegues; actualmente refuerzo la capa backend con Java,
-            Quarkus y Spring Boot.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="mailto:duretae@gmail.com">Contactar</a>
-            <a
-              class="button button-secondary"
-              href="https://github.com/Daniel349167"
-              target="_blank"
-              rel="noreferrer"
-              >Ver GitHub <span aria-hidden="true">↗</span></a
-            >
+      <section class="hero" id="inicio">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="kicker"><span aria-hidden="true"></span> Full Stack Developer · Lima, Perú</p>
+            <h1>Construyo el sistema completo.<br /><em>No solo la pantalla.</em></h1>
+            <p class="hero-lead">
+              Más de 5 años trabajando entre producto, frontend, APIs, datos e integraciones.
+              Convierto flujos operativos complejos en software mantenible, observable y listo para entregar.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-accent" href="#caso">Ver caso principal ↓</a>
+              <a class="button button-ghost" href="https://github.com/Daniel349167" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
           </div>
-        </div>
 
-        <aside class="signal-card" aria-label="Resumen profesional">
-          <p class="card-label">Enfoque actual</p>
-          <p class="signal-title">Full Stack<br />+ integraciones</p>
-          <div class="signal-list">
-            <span>Vue / Nuxt</span>
-            <span>Laravel</span>
-            <span>Java</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
-            <span>APIs REST</span>
-          </div>
-          <p class="signal-note">Del requerimiento al despliegue, con arquitectura explícita y documentación reproducible.</p>
-        </aside>
+          <aside class="hero-console" aria-label="Resumen del enfoque técnico">
+            <div class="console-bar"><span></span><span></span><span></span><b>engineering.profile</b></div>
+            <div class="console-body">
+              <p><i>01</i><span>scope</span><strong>UI → API → datos → entrega</strong></p>
+              <p><i>02</i><span>focus</span><strong>Integraciones y reglas de negocio</strong></p>
+              <p><i>03</i><span>backend</span><strong>Java · Spring Boot · Quarkus</strong></p>
+              <p><i>04</i><span>frontend</span><strong>Vue · Nuxt · Angular</strong></p>
+              <p><i>05</i><span>runtime</span><strong>PostgreSQL · Docker · CI</strong></p>
+            </div>
+            <div class="availability"><span></span> Disponible para oportunidades remotas e híbridas</div>
+          </aside>
+        </div>
       </section>
 
-      <section class="section section-light" id="experiencia">
+      <section class="evidence-bar" aria-label="Indicadores del perfil">
+        <div class="shell evidence-grid">
+          <p><strong>5+</strong><span>años construyendo producto</span></p>
+          <p><strong>5</strong><span>dominios de negocio</span></p>
+          <p><strong>E2E</strong><span>interfaz, backend y entrega</span></p>
+          <p><strong>PE / REMOTE</strong><span>base en Lima</span></p>
+        </div>
+      </section>
+
+      <section class="case-study section" id="caso">
         <div class="shell">
-          <div class="section-heading">
-            <p class="eyebrow">Perfil técnico</p>
-            <h2>Experiencia Full Stack, especialización enfocada.</h2>
+          <div class="section-intro case-intro">
+            <div>
+              <p class="kicker dark"><span aria-hidden="true"></span> Caso de ingeniería 001</p>
+              <h2>FiscalFlow<br />Integration Platform</h2>
+            </div>
             <p>
-              He trabajado sobre sistemas nuevos y existentes, desde la interfaz y la API hasta los
-              datos, integraciones y despliegues.
+              Un sandbox Full Stack para convertir una integración externa poco confiable en un flujo
+              idempotente, auditable y operable. Está inspirado en problemas reales de integración,
+              pero usa proveedores simulados y no contiene código ni datos de empleadores.
             </p>
           </div>
 
-          <div class="expertise-grid">
-            <article class="expertise-card">
-              <p class="card-index">01</p>
-              <h3>Productos end-to-end</h3>
-              <p>Interfaces, APIs, reglas de negocio, persistencia y despliegues para productos web y móviles.</p>
-              <p class="stack">Vue · Nuxt · Angular · Laravel · Node.js · Flutter</p>
+          <div class="case-meta" aria-label="Ficha del proyecto">
+            <div><span>ROL</span><strong>Diseño + implementación Full Stack</strong></div>
+            <div><span>STACK</span><strong>Java 17 · Spring Boot · Vue 3 · PostgreSQL</strong></div>
+            <div><span>ENTREGA</span><strong>Docker Compose · GitHub Actions · Testcontainers</strong></div>
+            <div><span>TIPO</span><strong>Proyecto personal · sandbox técnico</strong></div>
+          </div>
+
+          <div class="problem-grid">
+            <article>
+              <p class="index">01 / PROBLEMA</p>
+              <h3>Las APIs externas fallan y los reintentos duplican operaciones.</h3>
+              <p>
+                El reto no era “hacer un CRUD”, sino preservar consistencia cuando el proveedor tarda,
+                rechaza o falla temporalmente, sin perder trazabilidad para soporte.
+              </p>
             </article>
-            <article class="expertise-card">
-              <p class="card-index">02</p>
-              <h3>APIs e integraciones</h3>
-              <p>Autenticación, servicios REST, facturación electrónica, integraciones externas y diagnóstico de incidencias.</p>
-              <p class="stack">Java · Quarkus · Spring Boot · PHP · Laravel</p>
-            </article>
-            <article class="expertise-card">
-              <p class="card-index">03</p>
-              <h3>Datos y entrega</h3>
-              <p>Persistencia relacional, mensajería, contenedores, CI/CD y soporte sobre sistemas en operación.</p>
-              <p class="stack">PostgreSQL · MySQL · Kafka · Docker · GitHub Actions</p>
+            <article>
+              <p class="index">02 / DECISIÓN</p>
+              <h3>Estado explícito, outbox transaccional y puertos por proveedor.</h3>
+              <p>
+                Cada operación registra su intención y auditoría en la misma transacción. Un worker procesa
+                el outbox con backoff, dead-letter y adaptadores intercambiables.
+              </p>
             </article>
           </div>
 
-          <div class="domain-strip" aria-label="Dominios de experiencia">
-            <span>Facturación electrónica</span>
-            <span>Finanzas</span>
-            <span>Educación</span>
-            <span>Ecommerce</span>
-            <span>Operaciones</span>
+          <div class="architecture" aria-label="Flujo de arquitectura de FiscalFlow">
+            <div><span>01</span><strong>Vue operator UI</strong><small>alta, búsqueda y timeline</small></div>
+            <b aria-hidden="true">→</b>
+            <div><span>02</span><strong>Idempotent API</strong><small>request hash + state machine</small></div>
+            <b aria-hidden="true">→</b>
+            <div><span>03</span><strong>PostgreSQL</strong><small>document + audit + outbox</small></div>
+            <b aria-hidden="true">→</b>
+            <div><span>04</span><strong>Provider ports</strong><small>retry + dead-letter</small></div>
+          </div>
+
+          <div class="case-evidence">
+            <div class="evidence-copy">
+              <p class="index">03 / EVIDENCIA</p>
+              <h3>No depende de una presentación.</h3>
+              <p>
+                El repositorio incluye pruebas de dominio e integración con PostgreSQL real, build del
+                frontend, health checks, OpenAPI, ADRs, seguridad y validación E2E del stack completo.
+              </p>
+              <ul>
+                <li><span>✓</span> Idempotency-Key y detección de payload conflictivo</li>
+                <li><span>✓</span> Optimistic locking y máquina de estados</li>
+                <li><span>✓</span> Retries exponenciales, dead-letter y audit trail</li>
+                <li><span>✓</span> CI separada para backend, frontend y E2E</li>
+              </ul>
+              <a class="button button-dark" href="https://github.com/Daniel349167/fiscalflow-integration-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
+            </div>
+
+            <div class="dashboard-preview" aria-label="Vista conceptual del dashboard FiscalFlow">
+              <div class="preview-head"><span>FISCALFLOW / OPERACIÓN</span><i>API CONECTADA</i></div>
+              <h4>Control de integraciones</h4>
+              <div class="preview-metrics"><p><span>Total</span><b>04</b></p><p><span>Aceptación</span><b>75%</b></p><p><span>Retries</span><b>00</b></p></div>
+              <div class="preview-table">
+                <p class="table-head"><span>REFERENCIA</span><span>PROVEEDOR</span><span>ESTADO</span></p>
+                <p class="selected"><strong>INV-2026-004</strong><span>Demo Fast</span><em>ACEPTADO</em></p>
+                <p><strong>RETRY-2026-003</strong><span>Demo Fast</span><em>ACEPTADO</em></p>
+                <p><strong>INV-2026-002</strong><span>Demo Strict</span><em class="rejected">RECHAZADO</em></p>
+              </div>
+              <div class="preview-flow"><span>API</span><b>→</b><span>DB</span><b>→</b><span>OUTBOX</span><b>→</b><span>ADAPTER</span></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section projects-section" id="proyectos">
+      <section class="selected-work section" id="trabajo">
         <div class="shell">
-          <div class="section-heading section-heading-dark">
-            <p class="eyebrow">Trabajo seleccionado</p>
-            <h2>Proyectos diseñados para discutir decisiones reales.</h2>
-            <p>No son capturas aisladas: cada repositorio explica arquitectura, tradeoffs, pruebas y límites pendientes.</p>
+          <div class="section-intro work-intro">
+            <div>
+              <p class="kicker"><span aria-hidden="true"></span> Trabajo seleccionado</p>
+              <h2>Menos repositorios.<br />Más profundidad.</h2>
+            </div>
+            <p>Tres sistemas para conversar sobre arquitectura, fallos, seguridad y entrega; no una lista infinita de demos.</p>
           </div>
 
-          <div class="projects-grid">
-            <article class="project project-featured">
-              <div class="project-topline">
-                <span class="project-type">Java · Event-driven</span>
-                <span>Proyecto personal</span>
+          <div class="work-list">
+            <article class="work-item">
+              <p class="work-number">02</p>
+              <div>
+                <p class="work-label">EVENT-DRIVEN / JAVA</p>
+                <h3>LedgerGuard</h3>
+                <p>Autorización de transacciones y evaluación antifraude explicable mediante microservicios, Kafka y outbox transaccional.</p>
               </div>
-              <h3>LedgerGuard</h3>
-              <p>
-                Autorización de transacciones y evaluación antifraude explicable con microservicios,
-                outbox transaccional, idempotencia y observabilidad.
-              </p>
-              <ul>
-                <li>Quarkus 3.33 LTS</li>
-                <li>Kafka / Redpanda</li>
-                <li>PostgreSQL</li>
-                <li>Kubernetes</li>
-              </ul>
-              <a href="https://github.com/Daniel349167/ledgerguard-platform" target="_blank" rel="noreferrer"
-                >Explorar repositorio <span aria-hidden="true">↗</span></a
-              >
+              <ul><li>Quarkus</li><li>Kafka / Redpanda</li><li>OpenTelemetry</li><li>Kubernetes</li></ul>
+              <a href="https://github.com/Daniel349167/ledgerguard-platform" target="_blank" rel="noreferrer" aria-label="Ver LedgerGuard en GitHub">↗</a>
             </article>
 
-            <article class="project">
-              <div class="project-topline">
-                <span class="project-type">Java · SaaS</span>
-                <span>Proyecto personal</span>
+            <article class="work-item">
+              <p class="work-number">03</p>
+              <div>
+                <p class="work-label">MULTI-TENANT / SECURITY</p>
+                <h3>TenantFlow</h3>
+                <p>API SaaS multi-tenant con aislamiento por JWT, arquitectura hexagonal, RBAC y concurrencia optimista.</p>
               </div>
-              <h3>TenantFlow</h3>
-              <p>
-                API multi-tenant con arquitectura hexagonal, aislamiento por JWT, Keycloak/OIDC,
-                RBAC, bloqueo optimista y pruebas con PostgreSQL real.
-              </p>
-              <ul>
-                <li>Spring Boot 3.5</li>
-                <li>Keycloak 26</li>
-                <li>Testcontainers</li>
-              </ul>
-              <a href="https://github.com/Daniel349167/tenantflow-saas-api" target="_blank" rel="noreferrer"
-                >Explorar repositorio <span aria-hidden="true">↗</span></a
-              >
+              <ul><li>Spring Boot</li><li>Keycloak / OIDC</li><li>PostgreSQL</li><li>Testcontainers</li></ul>
+              <a href="https://github.com/Daniel349167/tenantflow-saas-api" target="_blank" rel="noreferrer" aria-label="Ver TenantFlow en GitHub">↗</a>
             </article>
 
-            <article class="project">
-              <div class="project-topline">
-                <span class="project-type">Document AI</span>
-                <span>Plataforma</span>
+            <article class="work-item">
+              <p class="work-number">04</p>
+              <div>
+                <p class="work-label">OPTIMIZATION / PRODUCT UI</p>
+                <h3>Supervisor Scheduling</h3>
+                <p>Motor de cronogramas con restricciones, edición interactiva y exportación para operaciones de supervisión.</p>
               </div>
-              <h3>Receipt Intelligence</h3>
-              <p>
-                Procesamiento de comprobantes mediante interfaz Next.js, servicios Python,
-                orquestación de análisis y pruebas end-to-end en Docker.
-              </p>
-              <ul>
-                <li>Next.js</li>
-                <li>FastAPI</li>
-                <li>Docker Compose</li>
-              </ul>
-              <a href="https://github.com/Daniel349167/receipt-intelligence-platform" target="_blank" rel="noreferrer"
-                >Explorar repositorio <span aria-hidden="true">↗</span></a
-              >
-            </article>
-
-            <article class="project">
-              <div class="project-topline">
-                <span class="project-type">Optimización</span>
-                <span>Producto web</span>
-              </div>
-              <h3>Supervisor Scheduling</h3>
-              <p>
-                Motor de generación de cronogramas con restricciones, visualización interactiva y
-                exportación para operaciones de supervisión.
-              </p>
-              <ul>
-                <li>Vue</li>
-                <li>Scheduling</li>
-                <li>GitHub Pages</li>
-              </ul>
-              <a href="https://github.com/Daniel349167/supervisor-scheduling-engine" target="_blank" rel="noreferrer"
-                >Explorar repositorio <span aria-hidden="true">↗</span></a
-              >
+              <ul><li>React</li><li>TypeScript</li><li>Scheduling</li><li>GitHub Pages</li></ul>
+              <a href="https://github.com/Daniel349167/supervisor-scheduling-engine" target="_blank" rel="noreferrer" aria-label="Ver Supervisor Scheduling en GitHub">↗</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="contact section" id="contacto">
-        <div class="shell contact-inner">
-          <div>
-            <p class="eyebrow">Contacto</p>
-            <h2>¿Necesitas un producto web, una integración o alguien que entienda el flujo completo?</h2>
+      <section class="experience section" id="experiencia">
+        <div class="shell experience-grid">
+          <div class="experience-heading">
+            <p class="kicker dark"><span aria-hidden="true"></span> Trayectoria</p>
+            <h2>Experiencia que conecta código, operación y cliente.</h2>
+            <p>
+              He participado en facturación, finanzas, educación, ecommerce y herramientas internas;
+              tanto construyendo producto como investigando incidencias en sistemas existentes.
+            </p>
           </div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:duretae@gmail.com">duretae@gmail.com</a>
-            <a class="text-link" href="https://github.com/Daniel349167" target="_blank" rel="noreferrer"
-              >github.com/Daniel349167 <span aria-hidden="true">↗</span></a
-            >
+
+          <div class="timeline">
+            <article><time>2024 — HOY</time><div><h3>Programador Full Stack · Freelance</h3><p>Productos por contrato: interfaz, APIs, persistencia, integraciones y despliegue.</p></div></article>
+            <article><time>2025</time><div><h3>Programador Full Stack · Desis Limitada</h3><p>Mejoras e incidencias sobre sistemas PHP, JavaScript, PostgreSQL y SQL Server.</p></div></article>
+            <article><time>2023 — 2024</time><div><h3>Programador Full Stack · Universidad Nacional de Ingeniería</h3><p>Aplicación móvil Kotlin, APIs REST y soporte de servicios web y Linux.</p></div></article>
+            <article><time>2022 — 2023</time><div><h3>Desarrollador Full Stack · Esmind Partners</h3><p>SPAs y servicios con Laravel, Vue, Node.js, MySQL y Docker.</p></div></article>
+            <article><time>2022 — 2023</time><div><h3>Analista de Integraciones · The Factory HKA Perú</h3><p>Integración de facturación electrónica: requisitos de API, diagnóstico y acompañamiento técnico a clientes.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles section">
+        <div class="shell">
+          <p class="kicker"><span aria-hidden="true"></span> Cómo trabajo</p>
+          <div class="principles-grid">
+            <article><span>01</span><h3>Modelar antes de repartir servicios.</h3><p>Primero hago explícitos el dominio, los estados y los fallos. La distribución viene después, si resuelve un problema real.</p></article>
+            <article><span>02</span><h3>Diseñar para el segundo intento.</h3><p>Las integraciones requieren idempotencia, reintentos controlados, observabilidad y una salida operativa.</p></article>
+            <article><span>03</span><h3>Entregar evidencia reproducible.</h3><p>README, decisiones, pruebas y contenedores reducen la distancia entre “funciona aquí” y un sistema mantenible.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto">
+        <div class="shell contact-grid">
+          <p class="contact-index">AVAILABLE / 2026</p>
+          <h2>¿Construimos algo que tenga que funcionar de verdad?</h2>
+          <div>
+            <a class="button button-accent" href="mailto:duretae@gmail.com">duretae@gmail.com ↗</a>
+            <a class="contact-link" href="https://github.com/Daniel349167" target="_blank" rel="noreferrer">github.com/Daniel349167 ↗</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="shell footer-inner">
-        <p>Daniel Ureta Espinal · Full Stack Developer</p>
+      <div class="shell footer-grid">
+        <p>Daniel Ureta Espinal</p>
+        <p>Full Stack Developer · APIs & Integrations</p>
         <p>Lima, Perú</p>
       </div>
     </footer>
