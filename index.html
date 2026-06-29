@@ -337,6 +337,11 @@
         const button = document.querySelector(".theme-toggle");
         const label = button?.querySelector(".theme-label");
         const themeMeta = document.querySelector('meta[name="theme-color"]');
+        const accentModes = ["copper", "ocean", "sage"];
+        const accentInterval = 20000;
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let accentIndex = 0;
+        let accentTimer;
 
         const applyTheme = (theme) => {
           const isLight = theme === "light";
@@ -349,7 +354,22 @@
           }
         };
 
+        const applyAccent = () => {
+          root.dataset.accent = accentModes[accentIndex];
+        };
+
+        const startAccentRotation = () => {
+          window.clearInterval(accentTimer);
+          if (reducedMotion.matches || document.hidden) return;
+          accentTimer = window.setInterval(() => {
+            accentIndex = (accentIndex + 1) % accentModes.length;
+            applyAccent();
+          }, accentInterval);
+        };
+
         applyTheme(root.dataset.theme || "dark");
+        applyAccent();
+        startAccentRotation();
         button?.addEventListener("click", () => {
           const next = root.dataset.theme === "light" ? "dark" : "light";
           applyTheme(next);
@@ -359,6 +379,8 @@
             // El tema sigue funcionando aunque el navegador bloquee el almacenamiento.
           }
         });
+        document.addEventListener("visibilitychange", startAccentRotation);
+        reducedMotion.addEventListener?.("change", startAccentRotation);
       })();
     </script>
   </body>

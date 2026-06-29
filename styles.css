@@ -1,3 +1,21 @@
+@property --accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #c97454;
+}
+
+@property --accent-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #8b402a;
+}
+
+@property --accent-soft {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ddb19f;
+}
+
 :root {
   --ink: #1b2023;
   --ink-soft: #363d40;
@@ -17,6 +35,22 @@
   --max-width: 1180px;
   --radius: 16px;
   --shadow: 0 24px 64px rgba(11, 18, 21, 0.22);
+  transition:
+    --accent 1200ms ease,
+    --accent-dark 1200ms ease,
+    --accent-soft 1200ms ease;
+}
+
+html[data-accent="ocean"] {
+  --accent: #72a9b5;
+  --accent-dark: #356f7b;
+  --accent-soft: #b3cfd4;
+}
+
+html[data-accent="sage"] {
+  --accent: #91ad87;
+  --accent-dark: #52714f;
+  --accent-soft: #c3d1bd;
 }
 
 * {
@@ -180,7 +214,7 @@ a {
   background:
     linear-gradient(rgba(245, 241, 231, 0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(245, 241, 231, 0.025) 1px, transparent 1px),
-    radial-gradient(circle at 86% 24%, rgba(201, 116, 84, 0.18), transparent 28%),
+    radial-gradient(circle at 86% 24%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 28%),
     var(--dark);
   background-size: 48px 48px, 48px 48px, auto, auto;
 }
@@ -801,7 +835,7 @@ h1 em {
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  border: 1px solid rgba(201, 161, 74, 0.42);
+  border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
   border-radius: 8px;
   font-size: 10px;
   font-weight: 700;
@@ -1032,7 +1066,7 @@ h1 em {
   border: 1px solid rgba(242, 238, 232, 0.12);
   border-radius: 24px;
   background:
-    radial-gradient(circle at 90% 20%, rgba(201, 116, 84, 0.18), transparent 30%),
+    radial-gradient(circle at 90% 20%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 30%),
     var(--dark);
   box-shadow: var(--shadow);
 }
@@ -1169,7 +1203,7 @@ html[data-theme="light"] .hero {
   background:
     linear-gradient(rgba(27, 32, 35, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(27, 32, 35, 0.035) 1px, transparent 1px),
-    radial-gradient(circle at 86% 24%, rgba(201, 116, 84, 0.15), transparent 28%),
+    radial-gradient(circle at 86% 24%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 28%),
     var(--surface);
   background-size: 48px 48px, 48px 48px, auto, auto;
 }
@@ -1258,8 +1292,8 @@ html[data-theme="light"] .selected-work .work-number {
 
 html[data-theme="light"] .verified {
   color: var(--accent-dark);
-  border-color: rgba(139, 64, 42, 0.24);
-  background: rgba(139, 64, 42, 0.06);
+  border-color: color-mix(in srgb, var(--accent-dark) 24%, transparent);
+  background: color-mix(in srgb, var(--accent-dark) 6%, transparent);
 }
 
 html[data-theme="light"] .work-actions a {
@@ -1290,7 +1324,7 @@ html[data-theme="light"] .contact-panel {
   color: var(--ink);
   border-color: var(--line);
   background:
-    radial-gradient(circle at 90% 20%, rgba(201, 116, 84, 0.15), transparent 30%),
+    radial-gradient(circle at 90% 20%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 30%),
     var(--surface);
   box-shadow: 0 24px 64px rgba(30, 37, 40, 0.12);
 }
@@ -1609,6 +1643,10 @@ html[data-theme="light"] .contact-link {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  :root {
+    transition: none;
+  }
+
   html {
     scroll-behavior: auto;
   }
