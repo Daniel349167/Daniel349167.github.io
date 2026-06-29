@@ -8,6 +8,13 @@
       content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack especializado en productos web, APIs, integraciones y sistemas Java."
     />
     <meta name="theme-color" content="#171c1f" />
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("portfolio-theme") || "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://daniel349167.github.io/" />
     <meta property="og:title" content="Daniel Ureta Espinal | Full Stack Developer" />
@@ -58,7 +65,13 @@
           <a href="#sobre-mi">Sobre mí</a>
           <a href="assets/Daniel-Ureta-CV-Full-Stack.pdf">CV</a>
         </div>
-        <a class="nav-cta" href="mailto:duretae@gmail.com">Hablemos ↗</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">◐</span>
+            <span class="theme-label">Claro</span>
+          </button>
+          <a class="nav-cta" href="mailto:duretae@gmail.com">Hablemos ↗</a>
+        </div>
       </nav>
     </header>
 
@@ -318,5 +331,35 @@
         <p>Lima, Perú</p>
       </div>
     </footer>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const button = document.querySelector(".theme-toggle");
+        const label = button?.querySelector(".theme-label");
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+        const applyTheme = (theme) => {
+          const isLight = theme === "light";
+          root.dataset.theme = isLight ? "light" : "dark";
+          themeMeta?.setAttribute("content", isLight ? "#f2eee8" : "#171c1f");
+          if (label) label.textContent = isLight ? "Oscuro" : "Claro";
+          if (button) {
+            button.setAttribute("aria-pressed", String(isLight));
+            button.setAttribute("aria-label", isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro");
+          }
+        };
+
+        applyTheme(root.dataset.theme || "dark");
+        button?.addEventListener("click", () => {
+          const next = root.dataset.theme === "light" ? "dark" : "light";
+          applyTheme(next);
+          try {
+            localStorage.setItem("portfolio-theme", next);
+          } catch {
+            // El tema sigue funcionando aunque el navegador bloquee el almacenamiento.
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
