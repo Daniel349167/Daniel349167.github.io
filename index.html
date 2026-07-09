@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack especializado en productos web, APIs, integraciones y sistemas Java."
+      content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack de aplicaciones web y móviles con Laravel, Vue, JavaScript, APIs REST y SQL."
     />
     <meta name="theme-color" content="#171c1f" />
     <script>
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Daniel Ureta Espinal | Full Stack Developer" />
     <meta
       property="og:description"
-      content="Casos de ingeniería Full Stack: interfaces, APIs, datos, integraciones y entrega reproducible."
+      content="Aplicaciones web y móviles, APIs REST, bases de datos e integraciones para resolver procesos reales."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://daniel349167.github.io/" />
@@ -80,10 +80,11 @@
         <div class="shell hero-grid">
           <div class="hero-copy">
             <p class="kicker"><span aria-hidden="true"></span> Full Stack Developer · Lima, Perú</p>
-            <h1>Construyo el sistema completo.<br /><em>No solo la pantalla.</em></h1>
+            <h1>Desarrollo aplicaciones web y móviles.<br /><em>De la idea a la entrega.</em></h1>
             <p class="hero-lead">
-              Más de 5 años trabajando entre producto, frontend, APIs, datos e integraciones.
-              Convierto flujos operativos complejos en software mantenible, observable y listo para entregar.
+              Más de 5 años creando productos web, apps móviles y APIs para facturación, educación,
+              finanzas y servicios. Trabajo con interfaces claras, lógica de negocio, bases de datos e
+              integraciones que resuelven procesos reales.
             </p>
             <div class="hero-actions">
               <a class="button button-accent" href="#caso">Ver caso principal ↓</a>
@@ -96,10 +97,10 @@
             <div class="console-bar"><span></span><span></span><span></span><b>engineering.profile</b></div>
             <div class="console-body">
               <p><i>01</i><span>scope</span><strong>UI → API → datos → entrega</strong></p>
-              <p><i>02</i><span>focus</span><strong>Integraciones y reglas de negocio</strong></p>
-              <p><i>03</i><span>backend</span><strong>Java · Spring Boot · Quarkus</strong></p>
-              <p><i>04</i><span>frontend</span><strong>Vue · Nuxt · Angular</strong></p>
-              <p><i>05</i><span>runtime</span><strong>PostgreSQL · Docker · CI</strong></p>
+              <p><i>02</i><span>web</span><strong>JavaScript · Vue · Angular · Laravel</strong></p>
+              <p><i>03</i><span>backend</span><strong>PHP/Laravel · Node.js · Java/Spring</strong></p>
+              <p><i>04</i><span>mobile</span><strong>Kotlin · Jetpack Compose · Flutter</strong></p>
+              <p><i>05</i><span>datos</span><strong>PostgreSQL · MySQL · SQL Server</strong></p>
             </div>
             <div class="availability"><span></span> Disponible para oportunidades remotas e híbridas</div>
           </aside>
@@ -119,70 +120,70 @@
         <div class="shell">
           <div class="section-intro case-intro">
             <div>
-              <p class="kicker dark"><span aria-hidden="true"></span> Caso de ingeniería 001</p>
-              <h2>FiscalFlow<br />Integration Platform</h2>
+              <p class="kicker dark"><span aria-hidden="true"></span> Caso Full Stack 001</p>
+              <h2>FiscalFlow<br />Dashboard de documentos y estados</h2>
             </div>
             <p>
-              Un sandbox Full Stack para convertir una integración externa poco confiable en un flujo
-              idempotente, auditable y operable. Está inspirado en problemas reales de integración,
-              pero usa proveedores simulados y no contiene código ni datos de empleadores.
+              Aplicación web personal para registrar documentos y consultar su estado desde un dashboard.
+              Reproduce un flujo de integración con proveedores simulados; no contiene código ni datos
+              de empleadores.
             </p>
           </div>
 
           <div class="case-meta" aria-label="Ficha del proyecto">
             <div><span>ROL</span><strong>Diseño + implementación Full Stack</strong></div>
-            <div><span>STACK</span><strong>Java 17 · Spring Boot · Vue 3 · PostgreSQL</strong></div>
-            <div><span>ENTREGA</span><strong>Docker Compose · GitHub Actions · Testcontainers</strong></div>
-            <div><span>TIPO</span><strong>Proyecto personal · sandbox técnico</strong></div>
+            <div><span>STACK</span><strong>Vue 3 · Java/Spring Boot · PostgreSQL</strong></div>
+            <div><span>ENTREGA</span><strong>Docker Compose · GitHub Actions</strong></div>
+            <div><span>TIPO</span><strong>Proyecto personal · aplicación Full Stack</strong></div>
           </div>
 
           <div class="problem-grid">
             <article>
               <p class="index">01 / PROBLEMA</p>
-              <h3>Las APIs externas fallan y los reintentos duplican operaciones.</h3>
+              <h3>Los equipos necesitan entender qué pasó con cada integración.</h3>
               <p>
-                El reto no era “hacer un CRUD”, sino preservar consistencia cuando el proveedor tarda,
-                rechaza o falla temporalmente, sin perder trazabilidad para soporte.
+                El reto es dar visibilidad a operaciones pendientes, rechazadas o completadas sin obligar
+                al usuario a revisar múltiples sistemas o registros técnicos.
               </p>
             </article>
             <article>
               <p class="index">02 / DECISIÓN</p>
-              <h3>Estado explícito, outbox transaccional y puertos por proveedor.</h3>
+              <h3>Una interfaz clara conectada a una API y una base de datos.</h3>
               <p>
-                Cada operación registra su intención y auditoría en la misma transacción. Un worker procesa
-                el outbox con backoff, dead-letter y adaptadores intercambiables.
+                El dashboard organiza estados y búsquedas; la API valida la información, conserva el
+                historial y reproduce el flujo completo con proveedores simulados.
               </p>
             </article>
           </div>
 
           <div class="architecture" aria-label="Flujo de arquitectura de FiscalFlow">
-            <div><span>01</span><strong>Vue operator UI</strong><small>alta, búsqueda y timeline</small></div>
+            <div><span>01</span><strong>Interfaz Vue</strong><small>registro, búsqueda y seguimiento</small></div>
             <b aria-hidden="true">→</b>
-            <div><span>02</span><strong>Idempotent API</strong><small>request hash + state machine</small></div>
+            <div><span>02</span><strong>API REST</strong><small>validación y reglas de negocio</small></div>
             <b aria-hidden="true">→</b>
-            <div><span>03</span><strong>PostgreSQL</strong><small>document + audit + outbox</small></div>
+            <div><span>03</span><strong>PostgreSQL</strong><small>documentos e historial</small></div>
             <b aria-hidden="true">→</b>
-            <div><span>04</span><strong>Provider ports</strong><small>retry + dead-letter</small></div>
+            <div><span>04</span><strong>Integración externa</strong><small>estados y reintentos</small></div>
           </div>
 
           <div class="case-evidence">
             <div class="evidence-copy">
               <p class="index">03 / EVIDENCIA</p>
-              <h3>No depende de una presentación.</h3>
+              <h3>Se puede ejecutar y revisar.</h3>
               <p>
-                El repositorio incluye pruebas de dominio e integración con PostgreSQL real, build del
-                frontend, health checks, OpenAPI, ADRs, seguridad y validación E2E del stack completo.
+                El repositorio reúne el frontend, la API, la base de datos y las instrucciones para levantar
+                el producto localmente. Sirve para revisar tanto la experiencia de usuario como la lógica detrás.
               </p>
               <ul>
-                <li><span>✓</span> Idempotency-Key y detección de payload conflictivo</li>
-                <li><span>✓</span> Optimistic locking y máquina de estados</li>
-                <li><span>✓</span> Retries exponenciales, dead-letter y audit trail</li>
-                <li><span>✓</span> CI separada para backend, frontend y E2E</li>
+                <li><span>✓</span> Dashboard con métricas, filtros y detalle de cada comprobante</li>
+                <li><span>✓</span> API REST con validaciones, estados y auditoría</li>
+                <li><span>✓</span> PostgreSQL para documentos e historial operativo</li>
+                <li><span>✓</span> Entorno local reproducible con Docker</li>
               </ul>
               <div class="verification-row" aria-label="Verificaciones del proyecto">
-                <span><i aria-hidden="true"></i> CI verificado</span>
-                <span>Docker E2E</span>
-                <span>Testcontainers</span>
+                <span><i aria-hidden="true"></i> Pruebas y CI configurados</span>
+                <span>Vue + Spring Boot</span>
+                <span>PostgreSQL</span>
               </div>
               <a class="button button-dark" href="https://github.com/Daniel349167/fiscalflow-integration-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
             </div>
@@ -201,40 +202,40 @@
           <div class="section-intro work-intro">
             <div>
               <p class="kicker"><span aria-hidden="true"></span> Trabajo seleccionado</p>
-              <h2>Menos repositorios.<br />Más profundidad.</h2>
+              <h2>Productos que muestran<br />un perfil completo.</h2>
             </div>
-            <p>Tres sistemas para conversar sobre arquitectura, fallos, seguridad y entrega; no una lista infinita de demos.</p>
+            <p>Una selección de aplicaciones web, móviles y de producto para revisar interfaz, APIs, datos y entrega.</p>
           </div>
 
           <div class="work-list">
             <article class="work-item">
               <p class="work-number">02</p>
               <div>
-                <p class="work-label">EVENT-DRIVEN / JAVA <span class="verified">● CI PASS</span></p>
-                <h3>LedgerGuard</h3>
-                <p>Autorización de transacciones y evaluación antifraude explicable mediante microservicios, Kafka y outbox transaccional.</p>
+                <p class="work-label">WEB APP / EDUCATION <span class="verified">● CÓDIGO</span></p>
+                <h3>Gestión Escolar</h3>
+                <p>Aplicación web para gestionar estudiantes, cursos y asignaciones, con autenticación, roles y panel de indicadores.</p>
               </div>
-              <ul><li>Quarkus</li><li>Kafka / Redpanda</li><li>OpenTelemetry</li><li>Kubernetes</li></ul>
-              <div class="work-actions"><a href="https://github.com/Daniel349167/ledgerguard-platform" target="_blank" rel="noreferrer" aria-label="Ver código de LedgerGuard">Código ↗</a></div>
+              <ul><li>Angular 17</li><li>Laravel 11</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <div class="work-actions"><a href="https://github.com/Daniel349167/GestionEscolar" target="_blank" rel="noreferrer" aria-label="Ver código de Gestión Escolar">Código ↗</a></div>
             </article>
 
             <article class="work-item">
               <p class="work-number">03</p>
               <div>
-                <p class="work-label">MULTI-TENANT / SECURITY <span class="verified">● CI PASS</span></p>
-                <h3>TenantFlow</h3>
-                <p>API SaaS multi-tenant con aislamiento por JWT, arquitectura hexagonal, RBAC y concurrencia optimista.</p>
+                <p class="work-label">ANDROID / MOBILE <span class="verified">● CÓDIGO</span></p>
+                <h3>App Móvil Koha</h3>
+                <p>Aplicación Android para consultar y gestionar solicitudes de préstamo, conectada a una API REST.</p>
               </div>
-              <ul><li>Spring Boot</li><li>Keycloak / OIDC</li><li>PostgreSQL</li><li>Testcontainers</li></ul>
-              <div class="work-actions"><a href="https://github.com/Daniel349167/tenantflow-saas-api" target="_blank" rel="noreferrer" aria-label="Ver código de TenantFlow">Código ↗</a></div>
+              <ul><li>Kotlin</li><li>Jetpack Compose</li><li>OkHttp</li><li>API REST</li></ul>
+              <div class="work-actions"><a href="https://github.com/Daniel349167/AppMovil-Koha" target="_blank" rel="noreferrer" aria-label="Ver código de App Móvil Koha">Código ↗</a></div>
             </article>
 
             <article class="work-item">
               <p class="work-number">04</p>
               <div>
-                <p class="work-label">OPTIMIZATION / PRODUCT UI <span class="verified">● LIVE</span></p>
+                <p class="work-label">FRONTEND / PRODUCT UI <span class="verified">● LIVE</span></p>
                 <h3>Supervisor Scheduling</h3>
-                <p>Motor de cronogramas con restricciones, edición interactiva y exportación para operaciones de supervisión.</p>
+                <p>Planificador visual de cronogramas con edición interactiva y exportación para operaciones de supervisión.</p>
               </div>
               <ul><li>React</li><li>TypeScript</li><li>Scheduling</li><li>GitHub Pages</li></ul>
               <div class="work-actions">
@@ -276,14 +277,15 @@
 
           <div class="about-copy">
             <p class="kicker dark"><span aria-hidden="true"></span> Sobre mí</p>
-            <h2>Ingeniería con contexto de negocio.</h2>
+            <h2>Desarrollo con contexto de negocio.</h2>
             <p class="about-lead">
               Soy desarrollador Full Stack y también he acompañado integraciones desde el lado del cliente.
-              Por eso me importa tanto que una interfaz sea clara como que una API pueda diagnosticarse cuando falla.
+              Por eso me importa tanto que una interfaz sea clara como que los datos, la API y el proceso
+              detrás realmente ayuden a las personas que lo usan.
             </p>
             <div class="about-facts">
               <p><span>BASE</span><strong>Lima, Perú</strong></p>
-              <p><span>ENFOQUE</span><strong>Full Stack · APIs · Integraciones</strong></p>
+              <p><span>ENFOQUE</span><strong>Web · móvil · APIs · datos</strong></p>
               <p><span>FORMA DE TRABAJO</span><strong>Comunicación directa y entregas reproducibles</strong></p>
             </div>
             <div class="about-links">
@@ -299,9 +301,9 @@
         <div class="shell">
           <p class="kicker"><span aria-hidden="true"></span> Cómo trabajo</p>
           <div class="principles-grid">
-            <article><span>01</span><h3>Modelar antes de repartir servicios.</h3><p>Primero hago explícitos el dominio, los estados y los fallos. La distribución viene después, si resuelve un problema real.</p></article>
-            <article><span>02</span><h3>Diseñar para el segundo intento.</h3><p>Las integraciones requieren idempotencia, reintentos controlados, observabilidad y una salida operativa.</p></article>
-            <article><span>03</span><h3>Entregar evidencia reproducible.</h3><p>README, decisiones, pruebas y contenedores reducen la distancia entre “funciona aquí” y un sistema mantenible.</p></article>
+            <article><span>01</span><h3>Entender el flujo antes de programar.</h3><p>Primero aclaro quién usa el producto, qué necesita lograr y qué información debe quedar registrada.</p></article>
+            <article><span>02</span><h3>Resolver de punta a punta.</h3><p>Puedo moverme entre interfaz, API, base de datos e integración para convertir una necesidad en una entrega completa.</p></article>
+            <article><span>03</span><h3>Entregar algo que se pueda continuar.</h3><p>README, control de versiones, pruebas y contenedores reducen la distancia entre “funciona aquí” y un producto mantenible.</p></article>
           </div>
         </div>
       </section>
@@ -327,7 +329,7 @@
     <footer>
       <div class="shell footer-grid">
         <p>Daniel Ureta Espinal</p>
-        <p>Full Stack Developer · APIs & Integrations</p>
+        <p>Full Stack Developer · Web, móvil y APIs</p>
         <p>Lima, Perú</p>
       </div>
     </footer>
