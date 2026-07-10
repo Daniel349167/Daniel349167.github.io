@@ -82,7 +82,7 @@
             <p class="kicker"><span aria-hidden="true"></span> Full Stack Developer · Lima, Perú</p>
             <h1>Desarrollo aplicaciones web y móviles.<br /><em>De la idea a la entrega.</em></h1>
             <p class="hero-lead">
-              Más de 5 años creando productos web, apps móviles y APIs para facturación, educación,
+              Más de 4 años creando productos web, apps móviles y APIs para facturación, educación,
               finanzas y servicios. Trabajo con interfaces claras, lógica de negocio, bases de datos e
               integraciones que resuelven procesos reales.
             </p>
@@ -109,7 +109,7 @@
 
       <section class="evidence-bar" aria-label="Indicadores del perfil">
         <div class="shell evidence-grid">
-          <p><strong>5+</strong><span>años construyendo producto</span></p>
+          <p><strong>4+</strong><span>años construyendo producto</span></p>
           <p><strong>5</strong><span>dominios de negocio</span></p>
           <p><strong>E2E</strong><span>interfaz, backend y entrega</span></p>
           <p><strong>PE / REMOTE</strong><span>base en Lima</span></p>
@@ -121,77 +121,78 @@
           <div class="section-intro case-intro">
             <div>
               <p class="kicker dark"><span aria-hidden="true"></span> Caso Full Stack 001</p>
-              <h2>FiscalFlow<br />Dashboard de documentos y estados</h2>
+              <h2>School Voting Platform<br />Gestión de elecciones escolares</h2>
             </div>
             <p>
-              Aplicación web personal para registrar documentos y consultar su estado desde un dashboard.
-              Reproduce un flujo de integración con proveedores simulados; no contiene código ni datos
-              de empleadores.
+              Aplicación web personal para digitalizar procesos de votación escolar: acceso por rol,
+              gestión de alumnos, emisión de votos y consulta de resultados. El repositorio documenta
+              el producto, su arquitectura y sus limitaciones conocidas.
             </p>
           </div>
 
           <div class="case-meta" aria-label="Ficha del proyecto">
             <div><span>ROL</span><strong>Diseño + implementación Full Stack</strong></div>
-            <div><span>STACK</span><strong>Vue 3 · API REST · PostgreSQL</strong></div>
-            <div><span>ENTREGA</span><strong>Docker Compose · GitHub Actions</strong></div>
+            <div><span>STACK</span><strong>Nuxt 4 · Vue 3 · TypeScript</strong></div>
+            <div><span>DATOS</span><strong>Supabase · API de servidor Nitro</strong></div>
             <div><span>TIPO</span><strong>Proyecto personal · aplicación Full Stack</strong></div>
           </div>
 
           <div class="problem-grid">
             <article>
               <p class="index">01 / PROBLEMA</p>
-              <h3>Los equipos necesitan entender qué pasó con cada integración.</h3>
+              <h3>Una elección escolar reúne datos, permisos y pasos que deben permanecer coordinados.</h3>
               <p>
-                El reto es dar visibilidad a operaciones pendientes, rechazadas o completadas sin obligar
-                al usuario a revisar múltiples sistemas o registros técnicos.
+                El reto es administrar alumnos, verificar quién puede votar, registrar cada participación
+                y publicar resultados sin depender de hojas y tareas manuales separadas.
               </p>
             </article>
             <article>
               <p class="index">02 / DECISIÓN</p>
-              <h3>Una interfaz clara conectada a una API y una base de datos.</h3>
+              <h3>Una aplicación única para docentes, votantes y consulta de resultados.</h3>
               <p>
-                El dashboard organiza estados y búsquedas; la API valida la información, conserva el
-                historial y reproduce el flujo completo con proveedores simulados.
+                Nuxt y Vue concentran la experiencia; las operaciones privilegiadas viven en la API de
+                servidor y Supabase mantiene los datos fuera del navegador.
               </p>
             </article>
           </div>
 
-          <div class="architecture" aria-label="Flujo de arquitectura de FiscalFlow">
-            <div><span>01</span><strong>Interfaz Vue</strong><small>registro, búsqueda y seguimiento</small></div>
+          <div class="architecture" aria-label="Flujo de arquitectura de School Voting Platform">
+            <div><span>01</span><strong>Interfaz Nuxt / Vue</strong><small>acceso, gestión y votación</small></div>
             <b aria-hidden="true">→</b>
-            <div><span>02</span><strong>API REST</strong><small>validación y reglas de negocio</small></div>
+            <div><span>02</span><strong>API Nitro</strong><small>operaciones del servidor</small></div>
             <b aria-hidden="true">→</b>
-            <div><span>03</span><strong>PostgreSQL</strong><small>documentos e historial</small></div>
+            <div><span>03</span><strong>Supabase</strong><small>sesiones y datos</small></div>
             <b aria-hidden="true">→</b>
-            <div><span>04</span><strong>Integración externa</strong><small>estados y reintentos</small></div>
+            <div><span>04</span><strong>Excel</strong><small>importación y exportación</small></div>
           </div>
 
           <div class="case-evidence">
             <div class="evidence-copy">
               <p class="index">03 / EVIDENCIA</p>
-              <h3>Se puede ejecutar y revisar.</h3>
+              <h3>La interfaz y el código se pueden revisar.</h3>
               <p>
-                El repositorio reúne el frontend, la API, la base de datos y las instrucciones para levantar
-                el producto localmente. Sirve para revisar tanto la experiencia de usuario como la lógica detrás.
+                La demo pública permite revisar el acceso y la interfaz. El repositorio reúne el frontend,
+                la API de servidor, la integración con Supabase y las instrucciones de ejecución.
               </p>
               <ul>
-                <li><span>✓</span> Dashboard con métricas, filtros y detalle de cada comprobante</li>
-                <li><span>✓</span> API REST con validaciones, estados y auditoría</li>
-                <li><span>✓</span> PostgreSQL para documentos e historial operativo</li>
-                <li><span>✓</span> Entorno local reproducible con Docker</li>
+                <li><span>✓</span> Sesiones de docentes y administradores</li>
+                <li><span>✓</span> Importación de alumnos y flujo de votación</li>
+                <li><span>✓</span> Resultados agregados y exportación a Excel</li>
+                <li><span>✓</span> Credenciales privilegiadas aisladas en el servidor</li>
               </ul>
               <div class="verification-row" aria-label="Verificaciones del proyecto">
-                <span><i aria-hidden="true"></i> Pruebas y CI configurados</span>
-                <span>Vue + API REST</span>
-                <span>PostgreSQL</span>
+                <span><i aria-hidden="true"></i> Build verificado en CI</span>
+                <span>Nuxt 4 + Nitro</span>
+                <span>Supabase</span>
               </div>
-              <a class="button button-dark" href="https://github.com/Daniel349167/fiscalflow-integration-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
+              <a class="button button-dark" href="https://votacion-escolar-8161.vercel.app" target="_blank" rel="noreferrer">Abrir demo ↗</a>
+              <a class="button button-dark" href="https://github.com/Daniel349167/school-voting-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
             </div>
 
             <figure class="product-shot">
-              <div class="product-shot-bar"><span>FiscalFlow / Docker local</span><strong><i aria-hidden="true"></i> API conectada</strong></div>
-              <img src="assets/fiscalflow-dashboard.png" alt="Dashboard operativo de FiscalFlow con métricas, comprobantes y auditoría" width="1265" height="712" loading="lazy" />
-              <figcaption>Aplicación real ejecutándose con Vue, una API REST y PostgreSQL.</figcaption>
+              <div class="product-shot-bar"><span>School Voting / Demo pública</span><strong><i aria-hidden="true"></i> Interfaz disponible</strong></div>
+              <img src="assets/school-voting-login.png" alt="Pantalla de acceso para docentes de School Voting Platform" width="1536" height="674" loading="lazy" />
+              <figcaption>Pantalla de acceso de la demo pública; las operaciones completas requieren un entorno Supabase configurado.</figcaption>
             </figure>
           </div>
         </div>
@@ -224,23 +225,22 @@
               <div>
                 <p class="work-label">WEB APP / QUOTES <span class="verified">● CÓDIGO</span></p>
                 <h3>QuoteFlow</h3>
-                <p>Aplicación Full Stack para crear, enviar y dar seguimiento a cotizaciones, con clientes, estados y una interfaz de trabajo ágil.</p>
+                <p>Workspace Full Stack para cotizaciones y seguimientos con API tipada, persistencia PostgreSQL, migraciones, pruebas y CI.</p>
               </div>
-              <ul><li>React</li><li>TypeScript</li><li>Node.js</li><li>API REST</li></ul>
+              <ul><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Docker</li></ul>
               <div class="work-actions"><a href="https://github.com/Daniel349167/quote-flow-react-node" target="_blank" rel="noreferrer" aria-label="Ver código de QuoteFlow">Código ↗</a></div>
             </article>
 
             <article class="work-item">
               <p class="work-number">04</p>
               <div>
-                <p class="work-label">WEB APP / EDUCATION <span class="verified">● LIVE</span></p>
-                <h3>School Voting Platform</h3>
-                <p>Plataforma Full Stack para procesos de votación escolar, con autenticación, administración, gestión de datos y exportación de resultados.</p>
+                <p class="work-label">WEB APP / INTEGRATIONS <span class="verified">● CÓDIGO</span></p>
+                <h3>FiscalFlow</h3>
+                <p>Dashboard Full Stack para registrar documentos, consultar estados y revisar la trazabilidad de integraciones simuladas.</p>
               </div>
-              <ul><li>Nuxt</li><li>Vue</li><li>TypeScript</li><li>Supabase</li></ul>
+              <ul><li>Vue 3</li><li>API REST</li><li>PostgreSQL</li><li>Docker</li></ul>
               <div class="work-actions">
-                <a href="https://votacion-escolar-8161.vercel.app" target="_blank" rel="noreferrer" aria-label="Abrir demo de School Voting Platform">Demo ↗</a>
-                <a href="https://github.com/Daniel349167/school-voting-platform" target="_blank" rel="noreferrer" aria-label="Ver código de School Voting Platform">Código ↗</a>
+                <a href="https://github.com/Daniel349167/fiscalflow-integration-platform" target="_blank" rel="noreferrer" aria-label="Ver código de FiscalFlow">Código ↗</a>
               </div>
             </article>
           </div>
