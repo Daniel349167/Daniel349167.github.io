@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack de aplicaciones web y móviles con Laravel, Vue, JavaScript, APIs REST y SQL."
+      content="Portafolio de Daniel Ureta Espinal, desarrollador Full Stack de aplicaciones web y móviles con Kotlin, Laravel, Vue, APIs REST y PostgreSQL."
     />
     <meta name="theme-color" content="#171c1f" />
     <script>
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Daniel Ureta Espinal | Full Stack Developer" />
     <meta
       property="og:description"
-      content="Aplicaciones web y móviles, APIs REST, bases de datos e integraciones para resolver procesos reales."
+      content="Aplicaciones web y móviles, APIs REST y sistemas offline-first para resolver procesos reales."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://daniel349167.github.io/" />
@@ -121,78 +121,79 @@
           <div class="section-intro case-intro">
             <div>
               <p class="kicker dark"><span aria-hidden="true"></span> Caso Full Stack 001</p>
-              <h2>School Voting Platform<br />Gestión de elecciones escolares</h2>
+              <h2>FieldOps Service Platform<br />Operaciones de campo, incluso sin conexión</h2>
             </div>
             <p>
-              Aplicación web personal para digitalizar procesos de votación escolar: acceso por rol,
-              gestión de alumnos, emisión de votos y consulta de resultados. El repositorio documenta
-              el producto, su arquitectura y sus limitaciones conocidas.
+              Plataforma personal de órdenes de servicio que conecta una app Android para técnicos, una
+              API Laravel y un panel web de coordinación. El flujo prioriza continuidad offline, permisos,
+              trazabilidad y sincronización segura cuando vuelve la conectividad.
             </p>
           </div>
 
           <div class="case-meta" aria-label="Ficha del proyecto">
-            <div><span>ROL</span><strong>Diseño + implementación Full Stack</strong></div>
-            <div><span>STACK</span><strong>Nuxt 4 · Vue 3 · TypeScript</strong></div>
-            <div><span>DATOS</span><strong>Supabase · API de servidor Nitro</strong></div>
-            <div><span>TIPO</span><strong>Proyecto personal · aplicación Full Stack</strong></div>
+            <div><span>ROL</span><strong>Arquitectura + implementación end-to-end</strong></div>
+            <div><span>PRODUCTO</span><strong>Kotlin / Compose · Vue 3 / TypeScript</strong></div>
+            <div><span>BACKEND</span><strong>Laravel 12 · PostgreSQL · API REST</strong></div>
+            <div><span>CALIDAD</span><strong>Pruebas · Docker · sincronización offline</strong></div>
           </div>
 
           <div class="problem-grid">
             <article>
               <p class="index">01 / PROBLEMA</p>
-              <h3>Una elección escolar reúne datos, permisos y pasos que deben permanecer coordinados.</h3>
+              <h3>El trabajo en campo no puede detenerse cada vez que la conexión se vuelve inestable.</h3>
               <p>
-                El reto es administrar alumnos, verificar quién puede votar, registrar cada participación
-                y publicar resultados sin depender de hojas y tareas manuales separadas.
+                Técnicos y coordinadores deben mantener alineados estados, prioridades, evidencias y
+                responsables sin perder cambios ni depender de registros manuales separados.
               </p>
             </article>
             <article>
               <p class="index">02 / DECISIÓN</p>
-              <h3>Una aplicación única para docentes, votantes y consulta de resultados.</h3>
+              <h3>Una experiencia offline-first en el móvil y una vista operativa central para coordinar.</h3>
               <p>
-                Nuxt y Vue concentran la experiencia; las operaciones privilegiadas viven en la API de
-                servidor y Supabase mantiene los datos fuera del navegador.
+                Room conserva la agenda y una cola persistente; Laravel aplica permisos, idempotencia y
+                estados válidos; el panel Vue permite supervisar la operación desde un solo lugar.
               </p>
             </article>
           </div>
 
-          <div class="architecture" aria-label="Flujo de arquitectura de School Voting Platform">
-            <div><span>01</span><strong>Interfaz Nuxt / Vue</strong><small>acceso, gestión y votación</small></div>
-            <b aria-hidden="true">→</b>
-            <div><span>02</span><strong>API Nitro</strong><small>operaciones del servidor</small></div>
-            <b aria-hidden="true">→</b>
-            <div><span>03</span><strong>Supabase</strong><small>sesiones y datos</small></div>
-            <b aria-hidden="true">→</b>
-            <div><span>04</span><strong>Excel</strong><small>importación y exportación</small></div>
+          <div class="architecture" aria-label="Arquitectura de FieldOps Service Platform">
+            <div><span>01</span><strong>Android Kotlin / Compose</strong><small>Room + cola offline persistente</small></div>
+            <b aria-hidden="true">↔</b>
+            <div><span>02</span><strong>API Laravel</strong><small>RBAC, estados e idempotencia</small></div>
+            <b aria-hidden="true">↔</b>
+            <div><span>03</span><strong>PostgreSQL</strong><small>órdenes, evidencia y auditoría</small></div>
+            <b aria-hidden="true">↔</b>
+            <div><span>04</span><strong>Panel Vue</strong><small>despacho, filtros y seguimiento</small></div>
           </div>
 
           <div class="case-evidence">
             <div class="evidence-copy">
               <p class="index">03 / EVIDENCIA</p>
-              <h3>La interfaz y el código se pueden revisar.</h3>
+              <h3>Un producto verificable de extremo a extremo.</h3>
               <p>
-                La demo pública permite revisar el acceso y la interfaz. El repositorio reúne el frontend,
-                la API de servidor, la integración con Supabase y las instrucciones de ejecución.
+                La demo web usa datos locales claramente rotulados. El repositorio reúne los tres clientes
+                del sistema, decisiones de arquitectura, ejecución reproducible y pruebas automatizadas.
               </p>
               <ul>
-                <li><span>✓</span> Sesiones de docentes y administradores</li>
-                <li><span>✓</span> Importación de alumnos y flujo de votación</li>
-                <li><span>✓</span> Resultados agregados y exportación a Excel</li>
-                <li><span>✓</span> Credenciales privilegiadas aisladas en el servidor</li>
+                <li><span>✓</span> App Android con Room, agenda y cola offline</li>
+                <li><span>✓</span> API con RBAC, máquina de estados e idempotencia</li>
+                <li><span>✓</span> Panel Vue responsive con filtros y detalle operativo</li>
+                <li><span>✓</span> PostgreSQL, auditoría, pruebas y contenedores</li>
               </ul>
               <div class="verification-row" aria-label="Verificaciones del proyecto">
-                <span><i aria-hidden="true"></i> Build verificado en CI</span>
-                <span>Nuxt 4 + Nitro</span>
-                <span>Supabase</span>
+                <span><i aria-hidden="true"></i> Pruebas automatizadas</span>
+                <span>Offline-first</span>
+                <span>Modo demo identificado</span>
               </div>
-              <a class="button button-dark" href="https://votacion-escolar-8161.vercel.app" target="_blank" rel="noreferrer">Abrir demo ↗</a>
-              <a class="button button-dark" href="https://github.com/Daniel349167/school-voting-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
+              <a class="button button-dark" href="https://daniel349167.github.io/fieldops-service-platform/" target="_blank" rel="noreferrer">Abrir demo web ↗</a>
+              <a class="button button-dark" href="https://github.com/Daniel349167/fieldops-service-platform" target="_blank" rel="noreferrer">Examinar repositorio ↗</a>
+              <a class="button button-dark" href="https://github.com/Daniel349167/fieldops-service-platform/releases/latest" target="_blank" rel="noreferrer">Ver APK / release ↗</a>
             </div>
 
             <figure class="product-shot">
-              <div class="product-shot-bar"><span>School Voting / Demo pública</span><strong><i aria-hidden="true"></i> Interfaz disponible</strong></div>
-              <img src="assets/school-voting-login.png" alt="Pantalla de acceso para docentes de School Voting Platform" width="1536" height="674" loading="lazy" />
-              <figcaption>Pantalla de acceso de la demo pública; las operaciones completas requieren un entorno Supabase configurado.</figcaption>
+              <div class="product-shot-bar"><span>FieldOps Admin / Modo demo</span><strong><i aria-hidden="true"></i> Datos demostrativos</strong></div>
+              <img src="assets/fieldops-dashboard.png" alt="Panel de operaciones de FieldOps con métricas y órdenes de servicio" width="1440" height="1000" loading="lazy" />
+              <figcaption>Dashboard Vue en modo demo con datos locales rotulados; no contiene información de clientes reales.</figcaption>
             </figure>
           </div>
         </div>
@@ -234,13 +235,14 @@
             <article class="work-item">
               <p class="work-number">04</p>
               <div>
-                <p class="work-label">WEB APP / INTEGRATIONS <span class="verified">● CÓDIGO</span></p>
-                <h3>FiscalFlow</h3>
-                <p>Dashboard Full Stack para registrar documentos, consultar estados y revisar la trazabilidad de integraciones simuladas.</p>
+                <p class="work-label">WEB APP / EDUCATION <span class="verified">● DEMO + CÓDIGO</span></p>
+                <h3>School Voting Platform</h3>
+                <p>Plataforma de votación escolar con autenticación, roles, administración de alumnos y resultados demostrativos claramente rotulados.</p>
               </div>
-              <ul><li>Vue 3</li><li>API REST</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <ul><li>Nuxt 4</li><li>Vue 3</li><li>TypeScript</li><li>Supabase</li></ul>
               <div class="work-actions">
-                <a href="https://github.com/Daniel349167/fiscalflow-integration-platform" target="_blank" rel="noreferrer" aria-label="Ver código de FiscalFlow">Código ↗</a>
+                <a href="https://votacion-escolar-8161.vercel.app" target="_blank" rel="noreferrer" aria-label="Abrir demo de School Voting Platform">Demo ↗</a>
+                <a href="https://github.com/Daniel349167/school-voting-platform" target="_blank" rel="noreferrer" aria-label="Ver código de School Voting Platform">Código ↗</a>
               </div>
             </article>
           </div>
