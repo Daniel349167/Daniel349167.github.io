@@ -19,54 +19,68 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:duretae@gmail.com)
->> /Border [ 0 0 0 ] /Rect [ 168.8687 700.06 246.3899 710.44 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 170.2687 701.38 248.6862 711.88 ] /Subtype /Link /Type /Annot
 >>
 endobj
 5 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://daniel349167.github.io/)
->> /Border [ 0 0 0 ] /Rect [ 253.4484 700.06 340.4846 710.44 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 255.8262 701.38 343.8687 711.88 ] /Subtype /Link /Type /Annot
 >>
 endobj
 6 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://github.com/Daniel349167)
->> /Border [ 0 0 0 ] /Rect [ 347.543 700.06 445.6254 710.44 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 351.0087 701.38 450.225 711.88 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Daniel349167/client-workboard-laravel-vue)
->> /Border [ 0 0 0 ] /Rect [ 322.0032 174.53 366.5048 185.09 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://daniel349167.github.io/)
+>> /Border [ 0 0 0 ] /Rect [ 152.656 257.33 233.152 266.93 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Daniel349167/quote-flow-react-node)
->> /Border [ 0 0 0 ] /Rect [ 335.696 146.38 380.1976 156.94 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://github.com/Daniel349167/client-workboard-laravel-vue)
+>> /Border [ 0 0 0 ] /Rect [ 326.6778 221.29 371.938 232.03 ] /Subtype /Link /Type /Annot
 >>
 endobj
 9 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://daniel349167.github.io/fieldops-service-platform/)
->> /Border [ 0 0 0 ] /Rect [ 405.172 118.23 428.6416 128.79 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://daniel349167.github.io/quote-flow-react-node/)
+>> /Border [ 0 0 0 ] /Rect [ 373.4326 195.39 397.3022 206.13 ] /Subtype /Link /Type /Annot
 >>
 endobj
 10 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Daniel349167/fieldops-service-platform)
->> /Border [ 0 0 0 ] /Rect [ 435.8224 118.23 480.324 128.79 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://github.com/Daniel349167/quote-flow-react-node)
+>> /Border [ 0 0 0 ] /Rect [ 404.6054 195.39 449.8656 206.13 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R ] /Contents 15 0 R /MediaBox [ 0 0 612 792 ] /Parent 14 0 R /Resources <<
+/A <<
+/S /URI /Type /Action /URI (https://daniel349167.github.io/fieldops-service-platform/)
+>> /Border [ 0 0 0 ] /Rect [ 411.2643 169.49 435.1339 180.23 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Daniel349167/fieldops-service-platform)
+>> /Border [ 0 0 0 ] /Rect [ 442.4371 169.49 487.6972 180.23 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R ] /Contents 17 0 R /MediaBox [ 0 0 612 792 ] /Parent 16 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -74,31 +88,31 @@ endobj
 >> /Type /Page
 >>
 endobj
-12 0 obj
-<<
-/PageMode /UseNone /Pages 14 0 R /Type /Catalog
->>
-endobj
-13 0 obj
-<<
-/Author (Daniel Ureta Espinal) /CreationDate (D:20260711072902-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260711072902-05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (CV - Daniel Ureta Espinal - Full Stack) /Trapped /False
->>
-endobj
 14 0 obj
 <<
-/Count 1 /Kids [ 11 0 R ] /Type /Pages
+/PageMode /UseNone /Pages 16 0 R /Type /Catalog
 >>
 endobj
 15 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 3422
+/Author (Daniel Ureta Espinal) /CreationDate (D:20260711210201-05'00') /Creator (\(unspecified\)) /Keywords (Full Stack, React, Node.js, Laravel, Vue, TypeScript, PostgreSQL, APIs REST) /ModDate (D:20260711210201-05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (Desarrollador Full Stack - experiencia profesional, competencias y proyectos seleccionados) /Title (CV - Daniel Ureta Espinal - Full Stack) /Trapped /False
+>>
+endobj
+16 0 obj
+<<
+/Count 1 /Kids [ 13 0 R ] /Type /Pages
+>>
+endobj
+17 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3232
 >>
 stream
-Gb!;f?$"`@&q/*0Qq-VY7-Khqm)p\5hDe0@X<C0k._gq=JP77Eg6(I7>Q40eo]QApK>C\gQ!5kn5gj>WkOe#f4ZL[*T4;3F'k=H1XF'@ha(=iGF*u/Do*HA^?i9T6)VEonFdY++qgRJ]4n+68bH?;@JZHN!8=8jJr>p"^[UMP[[ToGb@lA[2%GJ;8Vus)%O(rr']0GeQjUDEs(GO%QX#jj<8bY3pgraUWgpCN<B0;;#B(*.K3?)V19R+eLfpTpkegc]*Ubk.d@QZU4iKmp(r%jiBM]UFf0u/kQf4bG[?@0Dm`)+Zlh=)enDW]<D3V;.$jnj!2q8;nha6PP)nH4+t@$]QVK>Cr*meF6mH:IYaAZebJ$O/9$rfa\9ji)J]hHu9*,;u,f0.obY#ERat!@LuF^bI>@Vr=n"[aiDTD#_lc>]P0OJY=qTlWQH$4<%R3r@s_!cMk=_kO0c32Ofb&Itp*MNaI"_]5,ac5$Ue6J(\L]Ol>WJk\B_j;ncldhN.4'G4]3"42&4mcLG?:kJ#XDL-o`Yc$mQ#"61ZI3+udJ!gjg;mD]DnRE--3Yc6"$?Ji^9rXE*BL\Q'VB)=`=@qN+&;sYbZ#YF#?b8$AK'rk8Z`tJtHBN0U^cQ>3]^9s4$VrG^Zl6o#$ULC%UZdr(K\\>h%rSbg<f"f,=3%a4,isQa2<3(_oUd>@TICrWErWsK_%#^>^!t'$oQ9R&FLdSV1Biee^3Tp+ejuTXYoS.2RIFDFSYhU^-$%75S50#*>AI#oQ:aKpHm#ePDY^l7ZYNMjCKj*sk;N.NY%!`+#M2Zit2]]K@kM=8tTC9q49"F)#_8Eq4\<9T7*OYqe-%GNf_aIIWp%RgUG4\?QoW?'IRDm2';PBpX6HPWdQqVP%%hAh]Np3tuVEiU'`)>QS%_L\f0GBIkY&G+/EfoE<>X+h"=R(4lGITP`-":$8dmPP%\*fXk^Be\]2kl^<Y5&P,$l9ej9]&OU':<qniXU=YDtts61<hoI6QnL,PUq`[lOM;H`dcpEQA^2nGq>0IH!KDa$8[[[g>+T!GF!!3/D4g8EZ!]X"k^I$+fq`WD!aTgh*5A!S>oR=EjHr-bHJUp#ntsXm@AoOoIpT+K:QEPUF]6f@mY@\RPGKqHYqC&:gte*NGXp0%uN=/_*\E-:kkHV=F\1oih2>?k><c)'LgBL(7)Q']2Z.Fe\*NJjXk;^RD555:M2J2Q/u0M$8#(tB6UD19(!U.1f)o33^LMNU?3iten`Wq8>6IbY?2HiQRWX!kH+8'Cc^ot4I^8!!B;)S.+W32Oq9tK5tLBc>gKmLs!O2a"SA_R++dIfQ&N:m7@k.\;h1oB^rmHM*U\jd'DgrjFN-u=>k@qF2H<noe,k:4D0T^MLqI@k6q#;7ah3Q32[,@LR2e8!WW;[aXhS;O=cmaI4bl,B[k7KT8'WQEA]-%Y65B)2eO7P18q\=YQpM!Pb"R9MYXjJe$F.%"Zr@hCStR!#/"Xr!Gso2MMd)UOUJ<#,6rd9uA#C.!e$HqtkrOeSs*93399-o$@"@gESAPs1S)[OZ5!J-?;"8@S&+8tfJtlB_*%mP%B^1R)+>hUU1q;7?A!S5l,FI#+6KOhT+_%$r!cid\#aC%a.PKH\!jDaS4^6*r'[JN_6:C6]YE*.f=lMe7%Ti:Th(WaQ6"Y_U/SQ)1&)buG"nQG,j5P/R_*(HIZ:<Af=BO>i_Or5+62Pk]dLK`?!\#YMeQNO9'4!EF50;sm5i]2.KRK@ecf&>u`e"9Ipnt77NSr]cDINJf/j<?0:8IE5MXDAp?#&OmXSOacpqCMQT8Skbb^RTr]XS^#XNh.mKjmGY[9A/KA1G<I=+Ul6>Das:J;h7s[0F178g8CQRE`h:LF!?5NXZ%M+Esb+4BSnI35@T3:IcC$.$D`VQ->@3^_6+G-M@_\*cHtT*:C_Wm5GsW\;NQQR\MGb)qD7:XR/W-7X?V",#^G3%@1oZW:OcS!W7^aUXAUI%77jKeAm,5Ng.uud3Dj+jN5c9Lrj9uS<q57E#K&lPm1_j%5*=Pbh/X\C;@[k<Rn71<JjFYDC?U:2sDFtEUBVj%3=AD#I_<P:uVCd_Y3jp)M(<M?<3aniI-h>73\_K(Bam:[m`tMpAk"MGOC$p(O3'RkqO"QliFJOKK#m7,kO,*<`MPIK+]5o\fMPA66d+^S'6ehUpQAfFg@O@'RdWV2mH>m#W]aLOs!n9*emp/;@/'"Tt'T_L=_IOM^d9!AMQ-G!:N,`"][kFV/S?P!>Zp%_%)jaUjP(%X,nRScXWPpl&]&U+oo(:`m^WIHG(fOD)peS<HK3.!hS1pGX`+#Z^!r?:9I8%$UFSLBG(l#JbFue]mXS'?.rZ]iM$MpYKHRFkpU<t2l,TA"(?4o/R=<AWEKkCg=2/g/u:Y:)o=Y=8Ro\@&oh232f)DRJH`:cH2OW0f`YZ]6n!MRC9?#)6"gX$MBjagpls)7[<']qZI>+\4g,H7a+185=0TE7fN,3M\X8q;''pV'?KjQFk4__g1ZhTkf%@*4m,;0Es+J<`W!H-Y;>M["G%ghf?[^sd]q1e/&$0\=1a1^T31(hSh1uZI(%Ula$]M='7Qd49Yejfm7eNY'0kddY`P5[9LrpSer[LapQOO]=%I'o$F*CdI09fen")V't,.X!"5)pSgK,WLI1U-d!jg;G\Bo>1([4nJd&t9L5.H2c=><3nV4/%9t/eoj#F#+..QACXDPr:3\V0#+J@l\F(jVCdODRufM4<tk*4&rC8]K3i>rm$g]1CT;r7[^F&Hk:b/"pmC]!C^b\Ne&u'*ke?.J;8<:htJ'HD/S;rVP1gi)EKbA`',[Lj[O51[FiOTHc#LERGQOUL2_K8H%lpW]_tBJdZ$Z+B;ZPj!=9dR.srWC)+:Ehq`)^^JUi5@^7Fkb=QjcY%G$o;_naAOm3>I5--io,OB0i'a9mfi?^l3_2$o,Tb.]F7QiO0So8s^YGO?G2I]kL'#WVUcJA+1-e^s6k^m+oq@Th<p6.B'7Q@a'H7($dLq`8s$&1Df&&#q625-gE.7PBOs'HDl+#TO!<>c(%")niM"_gWo$']409O$gbA%X1s<%T:O%rLNBZ_mpJ$oLG@<g0VY[C!:WjMVeStC'V<+YZ]FDaV>ca\5I)7$uh_n<V<DQ-gWiKb3[sql<;W^I5Gth=bPAk`^#K\BtX\ie7&H6MO+^MZeTXZ)jf!L=0G,lZt1'\34s.WU@_0!*Y/5C!@l\dXF<o`+;esn.WQT&)mnn&J"3.W>>iZ^-)()-jlCloR_eMlEo5VcDr<J.NNIoN9A?c>+i9Sj^HT,!30fc'"!/Ra.>E_fA:$nj[>7?RJ)XF#%'44\dQ`t)X>]C#FVOc6-IDG-qoao`?RV/n^]->S%U6rF?t@a"a^.-%0M-L%jinQn9eJO?),cDR@9RiO.bn!fm)Au)/iJPS~>endstream
+Gb!#^?$G!n&q0MXkXWrOQM$)&k%0AY'0F,ZJ<Lea[&&M!,,mFOabb*:j7d^i#[n[)1O(i+`ukq.<EJ"fFfQ47R.t=Yf.\B/m>N"q/RmCD2CFf+\7@KAKA")u#=`)^4kh;Q@/I*>iSAR%VG/Ce*T1#V%oVCjL>O;c7hXhWVI@+%3%!+,H;WSHWs2%;\Z4V19g<TRi<4`!Gf4RkCA3NhW,&Kg[VB(U(FA/3Pbstij@Z_0P!P]0PfDdUS?eYW.H6^a6BYapj1Y[+^\pH1?chYAl=R.54Y.K'<jV#bg2X4uQ6KAqJreQ,@tUt$n/]s`!]WgJ_fQpBnVL\bT%OL-@JcpWPO#[;cg]FINe]Nt9m&QGn07RUGhTnl)iVkgA2*>5_/t'Jd3#LHrWr\.m`GN&7g)T)D;f<KLDcuda8fGT]eZ6n"?N^Yr<LgNA9'[KohR4gA9]sMOm/rsnfI4h%/M>-]RRL2i-!PAoKU1?HZF+O3\\jW31><OC9)%dDJe\AO*%d&/@0qp_F@r.g,5?35n6CITcGn#o%NVNR.,$eYh-dbm1@b6iYua^B"sGFW)U98s&gV3a$qJ?lAB4l]$mYtPE+D(]"YH-`L$/8i*n?4f;la9j3uRb[^a$jfT#3@a(]Gu'*Q<ii<13oo9a&dbZW3p&oQIkrN=Ps[ss,h/Bo&4IXj*PCfmc&.)pLH9t+I#M/u5NDNbgDj`Pq2iVTCOE0k8>!7fi3e@S>3%:hdlOci+P78>$r4@66BXsN]Fp*4(1ZS^a-d'-29>YI^;),2>ABGU3$L2\3Wa`hpW;9O'P>9;hr*U/X2Efs9kQ]=5!e$(5HY#%>U4(JhA8q5:%6Wd<BbO9FbcK$Rt_RVsEP2=Qh6<TM;.HloFn&fI<('l,o)4$*/`=!NYI[[Qr_"A^g6Z]-6'%'&,S]2@I(+_%^\2$OU[?/T!gu4\AqdYNsT11ppIiP)<n/IS22Oklqf%se\,*Im"3W_;jXrYgq;coT/1VsK6nE^agpd'*;=O"!W3R?'HY.s+6A"+')%Zg8E<$g?,p=B(G!p.V9ntYBI3us_Yf>eD7&NLh'JLIGD)_tj;@Y^K&><33>c\gc9?,in^%f')0j,<I5Nr%uATU3I3]@hten]>n,`4oGu6O^W!qg>C<4acf9)uu>T$2]I9hi3[eaP'i6GK>JoR.3$u*rO))bE6Ab]4<PB]+0__FOhUrdg-A7KOO32[(FZ"n\O[TUJjT.n/1jOfn.(T+tj^p5sKJ4LHGHh(GZ/T1"d]bF*&lQl&`Z)nZKMJrNLfri7.bh.2JD=)-(dd]<cmc@@H*+=Wcq'J1ZL4jq1&Y]ba,]e)PLMA?#b]Q4l:EOC;B0L%81i9*T#WJ;Jppr$Mg^4;A0%+aC\#/)\Y-4m"c*Rei)UH-iRO]B]aK%I0nZO.&5@>Hdk@3Rf;B8X.k^\Wj0qe1*=m<gr\!XGiu@C*uf"-'e&"QI$4h7Oelo@kg\F#0f+u)*/)f`$=gRFGiNT:NBd]q?UFP=3:k4pbA:ea$Q&C)(^:L-mTFGS)6s4$np%-QM-HS&`X<>n=1rPUoJK'$Dmao:a4k?9-Ym*6s_L'3[?7p'_%d3C'F79UY*2@2bV>Ec^a0`HruRhgI)HhBQTf33pSdm=IO>tA2."3XSnnOihfU/O3=_LN)<Rr82;LkRPNDCj!``PHTM\/f!LA$*sfC>\\\f'_fMEp.C\U\]dM"Qs#[-Oo"!2L#qqNB^MgCa3HST)qJ][*?0<#5^It<nQ1dQ"4hru:;6=SU>cZFD@j5>gKqq_[W$k#pZm4@?'jFZq>@giL'HHE#,h<u&J]MWTLfjR/3HSjYFDEA9k%5SuB)eG^\4ZS!8q+2B$V`lC<c-2d\mXa3V2BkV7np5ui3B*9D>l6f<I_>VC,fLO6(+J!bHb;$W*k5J'rIro"m41MU#5qgJ4dWu4O]Y&FIdYl&V$lIUki!#;@9;Vd;Wj>&\Cqnko/]=EpL*0'RPGMZX^e;J7=Tf*(k\h?_m`-_EUGK+m/KuloJ@fn+`d=rspR]$7/E)ns5F&\=^7R++!d`@p(;_ReQ,k"i&V4I)g1e?EXk%^:,r?$]ksc4KNO*#apR*dfm.?W\i\Q9(4G`5@@YkahW^qKr(#9V:AF[gR>Tk^uRI-5dFIep;&Ll<E_+OWr[T&<+fPT)+#2IM9c!H^GR.I&@Y<Rf'%8G/P8L4B2_-jW)2";7<';h;RB.93k"uZ@]-ERToCs`H&0!<T;&:WJJ1/SXoo&h6$Q9LK??4XI*Un7;UnLI^It0iWXI@P/Za3?5nI^t[&Vgp+>CD$.bN?TW,S@:*:]b^e=7"+3WnZ*%IIE!%O/Uu:q8p68?$$6(e^+$VmO0EGnP]J^-MS*)NT`GGE5oCCe,'ukViCVWt9P@NMPL[Mc6BX(>;n8&M&9BXr,s2[t'fUM:gMrU%,5'c+_)F,1=,cV,hqC.?@QaI^sZcK'@0R=`.N86/0$PPliOO!$.7+S?<j_$usB*W[J&QDqY&i-8@U%h=`G<h4X"KcYm(Z?kB!'X7_e)GAIn.HaklGSBUiIbL+uh3P#&A*Xu_JDjkq:Wt/S/6-KY[lT'ESjAY+.#b]8n=k9h"9t[k_[%W.IB4',OnZ%G$(/aoBadam0dqTUk[`oe)M;A+>;JaD1./%M)o:s&jFF_$V8d?`4_T6@5^YK/F=%oj2GR9CCU3s^T5g$5'8d,f,%aRA?#G$iD"r,AP!clrXJ`;?6:/P7Aho[$Qn!2D\9Hd:@9b!.R",WcK6E2CVC17el;T$('0duW+\kDtS9G6fY&&=+h_q/0#_sGqeiUJq/kA;'?r?<jXQD.d)=FC-+5j1]W#kR>4L/q#aK7&'qlD!a6noK#2S:X;s+)TlUI^*Jg:@i:0^K=DPQtJ8*/R^%WnZB3R6D)DpJnIoH*O7S"CCg@WhFP3&)WZ&E(d(bFdM(fT]k2#m(Ourl:SQ#`f7O`sD3&11b_8`>%<1to^E2Bu'dZk-oDiV>+d1_&BM\]B<rq$_@llGT[GG86Zk^_u73q#:30PB-\]bFEeSX*@IPuK+5>b5.:rkH?%!FFqi]NaeVRmX=4"\d\PO"'HNc-n(X8>9BCt7QR-QN*Q[T[T0<c-^mC;"3Q2K.7W%"#aA]b=_u3tZaO=-YB!Wpr(NBWc2/\02AmU$<=qrEMI"%TZF+a2>[X_lJ^%lT\@_[f6ldcH4Yop`YsSA%VZ`'.0bL(6'oVC]=27b>FZ!G?Vm3/E2]pZ/jiXD1VHb~>endstream
 endobj
 xref
-0 16
+0 18
 0000000000 65535 f 
 0000000061 00000 n 
 0000000102 00000 n 
@@ -107,24 +121,26 @@ xref
 0000000493 00000 n 
 0000000672 00000 n 
 0000000850 00000 n 
-0000001058 00000 n 
-0000001258 00000 n 
-0000001462 00000 n 
-0000001667 00000 n 
-0000001918 00000 n 
-0000001988 00000 n 
-0000002301 00000 n 
-0000002362 00000 n 
+0000001027 00000 n 
+0000001234 00000 n 
+0000001435 00000 n 
+0000001637 00000 n 
+0000001843 00000 n 
+0000002049 00000 n 
+0000002314 00000 n 
+0000002384 00000 n 
+0000002847 00000 n 
+0000002908 00000 n 
 trailer
 <<
 /ID 
-[<cc3cfda5a0c2722f047cb057e72330ec><cc3cfda5a0c2722f047cb057e72330ec>]
+[<dc53d5ec6ae063f54e0611451c181d63><dc53d5ec6ae063f54e0611451c181d63>]
 % ReportLab generated PDF document -- digest (opensource)
 
-/Info 13 0 R
-/Root 12 0 R
-/Size 16
+/Info 15 0 R
+/Root 14 0 R
+/Size 18
 >>
 startxref
-5876
+6232
 %%EOF
